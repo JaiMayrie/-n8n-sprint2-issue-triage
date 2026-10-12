@@ -2,7 +2,7 @@
 
 **Current operating status: execution blocked.** n8n has not progressed beyond the first node during my attempts, and I have communicated with my instructor. The procedures below describe intended operation and proposed recovery; they do not report successful tests or completed shutdown actions. Required section names follow the course tutorial, p. 23.
 
-**Evidence upload note:** The PNG paths below identify prepared screenshot files. Their repository upload is pending; see `evidence/README.md`. The actual supplied n8n export is now included as [sprint2_github_issue_triage.json](sprint2_github_issue_triage.json), with all configuration values preserved. See the static-review section in `test_evidence.md` for saved settings that still need review; JSON inspection did not resolve the execution blocker.
+**Evidence upload note:** All 16 configuration screenshots are uploaded in `evidence/`; see the [screenshot inventory](evidence/README.md). The actual supplied n8n export is included as [sprint2_github_issue_triage.json](sprint2_github_issue_triage.json), with all configuration values preserved. See the static-review section in `test_evidence.md` for saved settings that still need review; completing the uploads and inspecting the JSON did not resolve the execution blocker or verify the runtime tests.
 
 ## Purpose
 
