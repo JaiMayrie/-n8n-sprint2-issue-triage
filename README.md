@@ -1,6 +1,6 @@
 # Sprint 2 — GitHub Issue Triage
 
-Current public repository: https://github.com/JaiMayrie/-n8n-sprint2-issue-triage
+Current public repository: https://github.com/JaiMayrie/n8n-sprint2-issue-triage
 
 Course: CS 590 Low Code No Code for Rapid Prototyping  
 Assignment: Sprint 2, Week 6  
@@ -14,7 +14,7 @@ The actual supplied n8n workflow export is now included as [sprint2_github_issue
 
 All 16 configuration screenshots are uploaded in `evidence/`, with filenames matching the evidence links below. See the [screenshot inventory](evidence/README.md). These images document the configured build, not successful runtime tests.
 
-Remaining repository-name cleanup: correct `-n8n-sprint2-issue-triage` to the course-required `n8n-sprint2-issue-triage` by removing the leading dash. The current repository is public, but the name does not yet match the handout.
+The public repository is named `n8n-sprint2-issue-triage`, matching the course-required name. The repository address above and forwarding command below use this name.
 
 ## Current status: configuration built; execution blocked
 
@@ -151,10 +151,10 @@ The intended setup is the one in the course tutorial: create the public test rep
 The prescribed forwarding command, adapted to the submission repository, is:
 
 ```bash
-gh webhook forward --repo=JaiMayrie/-n8n-sprint2-issue-triage --events=issues --url=http://localhost:5678/webhook/sprint2-issue-triage
+gh webhook forward --repo=JaiMayrie/n8n-sprint2-issue-triage --events=issues --url=http://localhost:5678/webhook/sprint2-issue-triage
 ```
 
-This command uses the current repository name. After removing its leading dash, change the `--repo` value to `JaiMayrie/n8n-sprint2-issue-triage`. It is documented as a setup step, not as a successfully completed action. The confirmed preparation result is an active GitHub CLI login: [cropped login status](evidence/16_github_login_status.png). No live forwarding result is included.
+This command uses the renamed repository. It is documented as a setup step, not as a successfully completed action. The confirmed preparation result is an active GitHub CLI login: [cropped login status](evidence/16_github_login_status.png). No live forwarding result is included.
 
 The export records `active: true`; this is a saved setting, not proof that the local webhook is currently reachable. Data Table selections reference this installation's table identifiers. A reviewer opening the export in another installation may need to select their own corresponding tables; the export does not contain table rows or runtime evidence.
 
