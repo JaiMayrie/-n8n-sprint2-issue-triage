@@ -2,7 +2,7 @@
 
 **Current operating status: execution blocked.** n8n has not progressed beyond the first node during my attempts, and I have communicated with my instructor. The procedures below describe intended operation and proposed recovery; they do not report successful tests or completed shutdown actions. Required section names follow the course tutorial, p. 23.
 
-**Evidence upload note:** The PNG paths below identify prepared screenshot files. Their repository upload is pending; see `evidence/README.md`. The actual n8n JSON export is also pending.
+**Evidence upload note:** The PNG paths below identify prepared screenshot files. Their repository upload is pending; see `evidence/README.md`. The actual supplied n8n export is now included as [sprint2_github_issue_triage.json](sprint2_github_issue_triage.json), with all configuration values preserved. See the static-review section in `test_evidence.md` for saved settings that still need review; JSON inspection did not resolve the execution blocker.
 
 ## Purpose
 
@@ -10,15 +10,15 @@
 
 **Expected result:** An auditable distinction between an issue record, its routing outcome, duplicate delivery, and failure. This is the course requirement, not an observed end-to-end result.
 
-**Evidence location:** `README.md`, `test_evidence.md`, and `evidence/01_workflow_canvas.png`. [Course tutorial, pp. 1–2, 7–8.]
+**Evidence location:** `README.md`, `test_evidence.md`, `sprint2_github_issue_triage.json`, and `evidence/01_workflow_canvas.png`. [Course tutorial, pp. 1–2, 7–8.]
 
 ## Normal operation
 
-**Action:** Once the blocker is resolved, confirm local n8n is available, the workflow is active/published, the two tables have the required columns, and GitHub CLI forwarding is running for the course repository. Create one course test issue at a time. Inspect the received payload, executed nodes, ledger, and route log before creating another issue. Keep the forwarding terminal open during the tests.
+**Action:** Once the blocker is resolved, review the outstanding static configuration findings in `test_evidence.md`. Confirm local n8n is available, the workflow is active/published, the two tables have the required columns, and GitHub CLI forwarding is running for the course repository. Create one course test issue at a time. Inspect the received payload, executed nodes, ledger, and route log before creating another issue. Keep the forwarding terminal open during the tests.
 
 **Expected result:** An `opened` event is normalized and classified. The new key reaches `Insert pending ledger row` before any route-log insert. A normal event produces one ledger row with `route_log_status = recorded` and one route-log row with the matching key and required route. Non-opened events stop at `Opened action?` without new records.
 
-**Evidence location:** Current configuration: `evidence/07_ledger_insert_upper.png`, `evidence/08_ledger_insert_lower.png`, and `evidence/10_route_log_mapping.png`. Actual execution and table-result evidence is unavailable; its status is in `test_evidence.md`. [Course tutorial, pp. 9–19.]
+**Evidence location:** Current configuration: `sprint2_github_issue_triage.json`, `evidence/07_ledger_insert_upper.png`, `evidence/08_ledger_insert_lower.png`, and `evidence/10_route_log_mapping.png`. Actual execution and table-result evidence is unavailable; its status is in `test_evidence.md`. [Course tutorial, pp. 9–19.]
 
 ## Duplicate delivery
 
@@ -38,7 +38,7 @@
 
 ## Recovery action
 
-**Action for the present blocker:** Preserve the current workflow export and available screenshots, keep the runtime tests marked blocked, and continue the existing instructor discussion. At the next diagnostic session, check receipt of a real course webhook and inspect the first node's input before changing downstream logic. The root cause is unconfirmed; no successful forwarding or processing is claimed.
+**Action for the present blocker:** Preserve the supplied workflow export and available screenshots, keep the runtime tests marked blocked, and continue the existing instructor discussion. At the next diagnostic session, check receipt of a real course webhook and inspect the first node's input before changing downstream logic. The static findings in `test_evidence.md` identify saved classification and mapping settings needing review; they do not establish the cause of the first-node symptom. No successful forwarding or processing is claimed.
 
 **Proposed action after a real route-log failure:** Pause new intake, preserve the affected ledger row, and identify it by `issue_key`. Inspect the failing node's table selection, column mapping, and error output. Check the route-log table for that key before retrying any insert. Because the duplicate guard stops existing keys, simply redelivering the same event will not automatically retry its route write. An instructor-reviewed controlled recovery path would need to reuse the existing ledger key, insert the route only if absent, and mark the ledger recorded only after a confirmed successful write. Do not delete the ledger or manually create rows to make evidence appear successful. This recovery extension is proposed, not implemented or tested.
 
@@ -52,12 +52,12 @@
 
 **Expected result:** No further test events are processed, and the local build and evidence remain available for review. I have not documented these shutdown actions as completed.
 
-**Evidence location:** This section is the shutdown record location. **Current record: shutdown completion not confirmed in the supplied evidence.** [Course tutorial, pp. 24–25.]
+**Evidence location:** This section is the shutdown record location. **Current record: shutdown completion not confirmed.** The supplied export records `active: true`; it does not establish the workflow's current live state. [Course tutorial, pp. 24–25.]
 
 ## What this prototype does not test
 
-**Action:** Restrict conclusions to the supplied configuration evidence and the reported blocker. Do not treat configured nodes as proof of output.
+**Action:** Restrict conclusions to the supplied configuration evidence and the reported blocker. Do not treat configured nodes or a parsed JSON file as proof of output.
 
 **Expected result:** The reviewer can distinguish the implemented configuration from the unverified runtime behaviors. Current evidence does not establish delivery, regex matching, table writes, duplicate suppression, the opened-action gate, recovery, or intentional-failure persistence. The course's local forwarding exercise also does not establish production availability, concurrent-delivery safety, real-user privacy handling, or performance.
 
-**Evidence location:** The blocked-test matrix in `test_evidence.md`. Production and concurrency limitations are explicitly untested questions, not claims about observed failures. [Course tutorial, pp. 4, 23.]
+**Evidence location:** The blocked-test matrix and static export review in `test_evidence.md`. Production and concurrency limitations are explicitly untested questions, not claims about observed failures. [Course tutorial, pp. 4, 23.]
