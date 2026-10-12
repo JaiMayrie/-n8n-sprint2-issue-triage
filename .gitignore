@@ -1,0 +1,15 @@
+# Keep credentials, private exports, and local application data out of GitHub.
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+*credentials*.json
+private-export*/
+private_exports/
+.n8n/
+.DS_Store
+__MACOSX/
+node_modules/
+# The reviewed submission export is intentionally NOT ignored:
+# sprint2_github_issue_triage.json
