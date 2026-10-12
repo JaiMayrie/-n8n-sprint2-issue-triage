@@ -8,7 +8,7 @@ Build session documented: October 10, 2026
 
 ## Repository preparation status
 
-The written files are prepared for this repository: `README.md`, `runbook.md`, `test_evidence.md`, `own_vs_rent.md`, and the updated `journals/week-06.md`.
+The current Sprint 2 documentation in this repository is `README.md`, `runbook.md`, and `test_evidence.md`.
 
 Remaining submission items:
 - Upload the 16 prepared configuration screenshots into `evidence/`. The screenshot links below are reserved for those files; the PNG files have not yet been uploaded. See [evidence upload inventory](evidence/README.md).
@@ -155,4 +155,4 @@ See [runbook.md](runbook.md) for intended operation, recovery, and shutdown. Use
 
 ## Sources
 
-Course source: *Sprint 2 Tutorial: GitHub Issue Triage Automation*, supplied course document, due October 11, 2026. Page references above refer to that 25-page handout. Evidence consists of the student's supplied October 10 configuration screenshots. [own_vs_rent.md](own_vs_rent.md) separately identifies external documentation and hypothetical cost assumptions.
+Course source: *Sprint 2 Tutorial: GitHub Issue Triage Automation*, supplied course document, due October 11, 2026. Page references above refer to that 25-page handout. Evidence consists of the student's supplied October 10 configuration screenshots.
