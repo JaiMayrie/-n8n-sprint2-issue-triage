@@ -2,13 +2,13 @@
 
 ## Repository upload note
 
-The actual n8n workflow export is now uploaded as [sprint2_github_issue_triage.json](sprint2_github_issue_triage.json). The 16 PNG files described below are prepared in the submission package but have not yet been uploaded to this repository. Their links identify the intended paths, not completed uploads. See [evidence/README.md](evidence/README.md) for the image inventory.
+The actual n8n workflow export is uploaded as [sprint2_github_issue_triage.json](sprint2_github_issue_triage.json). All 16 PNG files described below are uploaded in the repository's `evidence` folder, with filenames matching the links in this document. See [evidence/README.md](evidence/README.md) for the image inventory. Upload completion does not change the blocked/not-verified status of the runtime tests.
 
 ## Submission status
 
 **Configuration documented; runtime verification blocked.** During my execution attempts, n8n does not move beyond the first node. I have already communicated with my instructor about this issue. The root cause has not been established.
 
-The prepared screenshots and supplied workflow JSON show configured nodes, field mappings, connection layouts, and GitHub CLI preparation. They do not show successful execution or populated table results. No runtime test below is marked passed. A node configured to write `failed` is not evidence that the deliberate-failure test ran.
+The uploaded screenshots and supplied workflow JSON show configured nodes, field mappings, connection layouts, and GitHub CLI preparation. They do not show successful execution or populated table results. No runtime test below is marked passed. A node configured to write `failed` is not evidence that the deliberate-failure test ran.
 
 ## Static review of the supplied export
 
@@ -30,9 +30,9 @@ Configuration items that remain unresolved:
 
 These observations identify saved settings that differ from or need clarification against the tutorial. They do not establish the cause of the separately reported first-node blockage. No fixes were silently applied to the submitted workflow. Reference: uploaded JSON, particularly `Classify title`, the ledger nodes, and `connections`; course tutorial, pp. 11–16.
 
-## Configuration evidence prepared; PNG upload pending
+## Uploaded configuration evidence
 
-The original screenshots were captured during the October 10 build session. The prepared copies are cropped to remove unrelated browser and desktop areas. No execution output or table data has been added to them. Some field screenshots precede later node renaming or connection corrections; the uploaded JSON is the reference for the supplied final configuration.
+The original screenshots were captured during the October 10 build session. The uploaded copies are cropped to remove unrelated browser and desktop areas. No execution output or table data has been added to them. Some field screenshots precede later node renaming or connection corrections; the uploaded JSON is the reference for the supplied final configuration.
 
 | File | What it supports | What it does not establish |
 | --- | --- | --- |
