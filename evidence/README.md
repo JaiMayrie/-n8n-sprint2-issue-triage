@@ -1,8 +1,10 @@
 # Configuration screenshot upload inventory
 
-Status at repository setup: the 16 PNG files below are prepared locally but have not yet been uploaded to this repository. The GitHub connection used for setup supports text-file writes, not binary PNG uploads.
+The 16 PNG files below are prepared locally but have not yet been uploaded to this repository. The GitHub connection used for setup supports text-file writes, not binary PNG uploads.
 
-Upload these exact filenames into this `evidence` folder. The links in the README, test evidence, and build journal will then resolve without changing their paths. These are configuration screenshots, not successful runtime results. No blocked-execution screenshot, fabricated test result, or private instructor correspondence is included.
+Upload these exact filenames into this `evidence` folder. The links in the README and test-evidence document will then resolve without changing their paths. These are configuration screenshots, not successful runtime results. No blocked-execution screenshot, fabricated test result, or private instructor correspondence is included.
+
+The actual supplied workflow export is already available in the repository root as [sprint2_github_issue_triage.json](../sprint2_github_issue_triage.json). Its presence does not replace the screenshot uploads below.
 
 | Prepared filename | Upload status |
 | --- | --- |
