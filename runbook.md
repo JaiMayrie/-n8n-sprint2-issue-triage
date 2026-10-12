@@ -58,6 +58,6 @@
 
 **Action:** Restrict conclusions to the supplied configuration evidence and the reported blocker. Do not treat configured nodes as proof of output.
 
-**Expected result:** The reviewer can distinguish the implemented configuration from the unverified runtime behaviors. Current evidence does not establish delivery, regex matching, table writes, duplicate suppression, the opened-action gate, recovery, or intentional-failure persistence. The course's local forwarding exercise also does not establish production availability, concurrent-delivery safety, real-user privacy handling, or performance. I have no hands-on Zapier execution evidence for this comparison.
+**Expected result:** The reviewer can distinguish the implemented configuration from the unverified runtime behaviors. Current evidence does not establish delivery, regex matching, table writes, duplicate suppression, the opened-action gate, recovery, or intentional-failure persistence. The course's local forwarding exercise also does not establish production availability, concurrent-delivery safety, real-user privacy handling, or performance.
 
-**Evidence location:** The blocked-test matrix in `test_evidence.md` and the scope/assumptions in `own_vs_rent.md`. Production and concurrency limitations are explicitly untested questions, not claims about observed failures. [Course tutorial, pp. 4, 23.]
+**Evidence location:** The blocked-test matrix in `test_evidence.md`. Production and concurrency limitations are explicitly untested questions, not claims about observed failures. [Course tutorial, pp. 4, 23.]
