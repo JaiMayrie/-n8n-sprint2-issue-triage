@@ -12,9 +12,9 @@ The current Sprint 2 documentation in this repository is `README.md`, `runbook.m
 
 The actual supplied n8n workflow export is now included as [sprint2_github_issue_triage.json](sprint2_github_issue_triage.json). Its JSON syntax was checked, and no exposed password, token, configured credential, or pinned payload was found in the review. All exported configuration values and connections were preserved; only JSON whitespace was compacted. This is a configuration artifact, not proof of successful execution.
 
-Remaining submission items:
-- Upload the 16 prepared configuration screenshots into `evidence/`. The screenshot links below are reserved for those files; the PNG files have not yet been uploaded. See [evidence upload inventory](evidence/README.md).
-- Correct the repository name from `-n8n-sprint2-issue-triage` to the course-required `n8n-sprint2-issue-triage` (remove the leading dash). The current repository is public, but the name does not yet match the handout.
+All 16 configuration screenshots are uploaded in `evidence/`, with filenames matching the evidence links below. See the [screenshot inventory](evidence/README.md). These images document the configured build, not successful runtime tests.
+
+Remaining repository-name cleanup: correct `-n8n-sprint2-issue-triage` to the course-required `n8n-sprint2-issue-triage` by removing the leading dash. The current repository is public, but the name does not yet match the handout.
 
 ## Current status: configuration built; execution blocked
 
